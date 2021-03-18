@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Ultimate Guide to Helen</title>
+<script>
+function isPrime(x) {
+	//alert("Hello World!")
+
+	/* Prime number can only be divisible by 1 and itself
+	/ p = {2, 3, 5, 7, 11.... 101....}
+	/ !P = {4, 6, 9, 15 .... 225....}
+
+	/ x = 49
+	/ let i be a possible divisor, strating from 2
+	/ you check 2, 2 + 1, 2 + 2..., x - 1
+
+	12 % 7 = 5
+	11 % 2 = 1
+	*/
+
+	//var x = 289;
+	var prime = true;
+
+	for(var i = 2; i <= Math.sqrt(x); i++) {
+		if (x % i == 0) {
+			prime = false;
+			break;
+		}
+
+		else {
+			continue;
+		}
+	}
+
+	return prime;
+
+}
+
+function greatestPrime() {
+	var x = 1000000000;
+
+	for (var i = x; i--) {
+		if (x % i != 0) {
+			prime = true;
+			break;
+		}
+
+		else {
+			continue
+		}
+	}
+
+	return x;
+}
+
+</script>
+</head>
+<body>
+<h1>Hello World! This is Helen's first webpage.</h1>
+<h2>My Hobbies</h2>
+<ul>
+<li>Walking</li>
+<li>Golfing</li>
+<li>Exploring Fictional Universes</li>
+<ol type="a">
+	<li>Harry Potter</li>
+	<li>Marvel Cinematic Universe</li>
+	<li>Friends</li>
+</ol>
+<li>Basketball</li>
+<li>Litening to Music</li>
+</ul>
+<hr>
+<b>My Favorite Website: </b> <a href="https://www.yakhalafterschool.com/">Yakhal Afterschool Homepage</a>
+<br>
+<i>My Favorite Pokemon:</i>
+<img src="https://cdn.bulbagarden.net/upload/thumb/d/d7/448Lucario.png/250px-448Lucario.png" />
+<br>
+<u>My Social Media:</u>
+<br>
+<a href = "https://www.facebook.com/profile.php?id=100021908490741" target="_blank">
+	<img src="images/facebook.png" />&nbsp;
+<a href = "https://www.instagram.com/helndk/" target="_blank">
+	<img src="images/instagram.png" />&nbsp;
+<a href = "https://www.linkedin.com/in/helenkim2025" target="_blank">
+	<img src="images/linkedin.png" />&nbsp;
+
+<br>
+<br>
+<table border="1">
+<tr>
+	<th>Me</th>
+	<th>Jonathan</th>
+	<th>Mom</th>
+	<th>Dad</th>
+</tr>
+<tr>
+	<td>
+		<img src="images/family pic.jpg" />
+	</td>
+	<td>
+		<img src="images/family pic.jpg" />
+	</td>
+	<td>
+		<img src="images/family pic.jpg" />
+	</td>
+	<td>
+		<img src="images/family pic.jpg" />
+	</td>
+</tr>
+<tr>
+	<td rowspan="2">My Crush</td>
+	<td colspan="3">Paul Rudd</td>
+</tr>
+<tr>
+	<td colspan="3">
+		<img src="images/paul rudd.jpg" />
+	</td>
+</tr>
+</table>
+<br>
+<button onclick="isPrime()">Check Prime</button>
+</body>
+</html>
